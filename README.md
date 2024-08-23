@@ -37,10 +37,10 @@ Steps:
 2. Login to DockerHub.
 3. Build and Push Docker Image (dev)
 4. Push the image to DockerHub with the tags 
-`bryan292/devops-assignment-app:dev`.
+`bryan292/node-test-app-app:dev`.
 Or
-`bryan292/devops-assignment-app:prod`
-`bryan292/devops-assignment-app:latest`
+`bryan292/node-test-app-app:prod`
+`bryan292/node-test-app-app:latest`
 
 **deploy-infra**
 
