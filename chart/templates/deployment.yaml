@@ -2,23 +2,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devops-assignment-app
-  namespace: devops-assignment-app
+  name: node-test-app
+  namespace: node-test-app
   labels:
-    app: devops-assignment-app
+    app: node-test-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: devops-assignment-app
+      app: node-test-app
   template:
     metadata:
       labels:
-        app: devops-assignment-app
+        app: node-test-app
     spec:
       containers:
-      - name: devops-assignment-app
-        image: bryan292/devops-assignment-app:latest
+      - name: node-test-app
+        image: bryan292/node-test-app:latest
         ports:
         - containerPort: 3000
         env:

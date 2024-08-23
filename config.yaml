@@ -9,9 +9,9 @@ global:
     Environment: "Production"
     Owner: "Bryan Cerdas"
     project: "Multi-Cloud-K8s"
-  app_name: ingenio-devops-assignment
+  app_name: node-test-app
   branch: main
-  app_repo: https://github.com/bryan292/devops-assignment
+  app_repo: https://github.com/bryan292/node-test-app
 
 umbrella:
   cluster_autoscaler: true

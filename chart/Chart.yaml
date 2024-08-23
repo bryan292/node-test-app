@@ -1,8 +1,8 @@
 apiVersion: v2
-name: ingenio-devops-assignment
+name: node-test-app
 version: 1.0.1
 appVersion: 1.0.1
-description: Helm Chart for deploying ingenio-devops-assignment
+description: Helm Chart for deploying node-test-app
 
 maintainers:
   - name: Bryan Cerdas 

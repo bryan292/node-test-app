@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: devops-assignment-app
-  namespace: devops-assignment-app
+  name: node-test-app
+  namespace: node-test-app
   annotations:
     # Ingress class for AWS Load Balancer Controller
     kubernetes.io/ingress.class: "alb"
@@ -18,17 +18,17 @@ metadata:
 
 spec:
   rules:
-    - host: devops-assignment-app-{{ .Values.cluster_name }}.{{ .Values.domain }}
+    - host: node-test-app-{{ .Values.cluster_name }}.{{ .Values.domain }}
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: devops-assignment-app
+                name: node-test-app
                 port:
                   number: 80
   tls:
     - hosts:
-        - devops-assignment-app-{{ .Values.cluster_name }}.{{ .Values.domain }}
-      secretName: devops-assignment-app-tls
+        - node-test-app-{{ .Values.cluster_name }}.{{ .Values.domain }}
+      secretName: node-test-app-tls
