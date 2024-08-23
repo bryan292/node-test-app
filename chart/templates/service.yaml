@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: devops-assignment-app
+  namespace: devops-assignment-app
+spec:
+  type: ClusterIP  # Change to NodePort or LoadBalancer if external access is needed
+  selector:
+    app: devops-assignment-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000

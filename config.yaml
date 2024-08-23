@@ -1,0 +1,22 @@
+global:
+  cluster_name: demo
+  bucket_name: multi-cloud-k8s-iac
+  region: us-east-1
+  email: bryan292@outlook.com
+  provider: aws
+  environment: prod
+  common_tags:
+    Environment: "Production"
+    Owner: "Bryan Cerdas"
+    project: "Multi-Cloud-K8s"
+  app_name: ingenio-devops-assignment
+  branch: main
+  app_repo: https://github.com/bryan292/devops-assignment
+
+umbrella:
+  cluster_autoscaler: true
+
+network:
+  vpc_cidr: "10.0.0.0/16" 
+  domain: 292s.io
+  hosted_zone_id: Z02937251Z7C2YM5LJJVL
