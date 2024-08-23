@@ -1,10 +1,11 @@
 {
-  "name": "node",
+  "name": "node-test-app",
   "version": "1.0.0",
   "description": "A basic app to be deployed via Terraform and CI/CD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"  },
+    "test": "echo \"Error: no test specified\" && exit 1"  }
+  ,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bryan292/node-test-app.git"
