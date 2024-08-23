@@ -27,7 +27,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: bryan292/node-test-app-app:dev
+          tags: bryan292/node-test-app:dev
 
   build-and-push-prod:
     runs-on: ubuntu-latest
@@ -50,5 +50,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            bryan292/node-test-app-app:prod
-            bryan292/node-test-app-app:latest
+            bryan292/node-test-app:prod
+            bryan292/node-test-app:latest
